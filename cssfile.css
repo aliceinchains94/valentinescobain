@@ -1,0 +1,106 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #111;
+    color: #f2f2f2;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.6;
+    text-align: center;
+}
+
+/* HERO */
+.hero {
+    padding: 40px 20px;
+}
+
+.hero-img {
+    width: 250px;
+    max-width: 80%;
+    border-radius: 10px;
+    filter: grayscale(100%) contrast(120%);
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Rock Salt', cursive;
+    font-size: 2.5rem;
+}
+
+.subtitle {
+    font-size: 1rem;
+    opacity: 0.8;
+}
+
+/* MESSAGE */
+.message {
+    padding: 30px 20px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* QUESTION */
+.question {
+    padding: 30px 20px;
+}
+
+.question h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    background-color: transparent;
+    border: 2px solid #f2f2f2;
+    color: #f2f2f2;
+    padding: 12px 30px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #f2f2f2;
+    color: #111;
+}
+
+#response {
+    margin-top: 25px;
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+/* FOOTER */
+footer {
+    margin-top: 40px;
+    padding: 20px;
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+/* 📱 MOBILE MEDIA QUERY */
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .question h2 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        width: 100%;
+        max-width: 250px;
+    }
+}
